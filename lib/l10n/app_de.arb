@@ -169,6 +169,15 @@
   },
   "setupLinkInvalid": "Dieser Anmelde-Link ist ungültig oder unvollständig",
   "setupLinkSigningIn": "Anmelde-Link wird überprüft...",
+  "loginPlayDownloads": "Deine Downloads abspielen",
+  "signedOutDownloadsNote": "Du bist abgemeldet. Alles was du hier hörst wird zu {username} synchronisiert wenn du dich wieder einloggst.",
+  "@signedOutDownloadsNote": {
+    "placeholders": {
+      "username": {
+        "type": "String"
+      }
+    }
+  },
   "loginPasteLink": "Anmelde-Link einfügen",
   "loginPasteLinkHelp": "Füge den vollständigen Anmelde-Link ein, den du erhalten hast. Behandle ihn wie ein Passwort.",
   "loginFailed": "Anmeldung fehlgeschlagen",
@@ -293,6 +302,7 @@
   "author": "Autor",
   "dateAdded": "Hinzugefügt am",
   "numberOfBooks": "Anzahl Bücher",
+  "sortTotalDuration": "Total Dauer",
   "publishedYear": "Erscheinungsjahr",
   "duration": "Dauer",
   "random": "Zufällig",
@@ -442,6 +452,24 @@
   "bookmarksTabBookmarks": "Lesezeichen",
   "bookmarksTabHighlights": "Highlights",
   "highlightOpenInBook": "In Buch öffnen",
+  "highlightDeleteAction": "Highlight löschen",
+  "highlightDeleted": "Highlight gelöscht",
+  "highlightsDeleteCount": "{count} Highlight(s) löschen?",
+  "@highlightsDeleteCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "highlightsDeletedCount": "{count} Highlight(s) gelöscht",
+  "@highlightsDeletedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "quoteShareTitle": "Zitat teilen",
   "quoteShareAction": "Teilen",
   "quoteShapePortrait": "Portrait",
@@ -1540,6 +1568,8 @@
   "fullyAbsorbAction": "Vollständig Absorb",
   "removeFromAbsorbing": "Aus Absorbing entfernen",
   "addToAbsorbing": "Zu Absorbing hinzufügen",
+  "absorbNext": "Nächstes absorbieren",
+  "absorbLastHint": "Am Ende der Liste",
   "removedFromAbsorbing": "Aus Absorbing entfernt",
   "addedToAbsorbing": "Zu Absorbing hinzugefügt",
   "removeFromContinueListening": "Aus \"Weiterhören\" entfernen",
@@ -3126,6 +3156,8 @@
   "statsScreenOs": "Betriebssystem",
   "statsScreenPlayMethod": "Wiedergabemethode",
   "statsScreenLoading": "Lädt...",
+  "statsScreenJumpToStart": "Springe zum Anfang",
+  "statsScreenJumpToEnd": "Springe zum Ende",
   "statsScreenPlayMethodDirect": "Direktwiedergabe",
   "statsScreenPlayMethodDirectStream": "Direkt-Stream",
   "statsScreenPlayMethodTranscode": "Transcodieren",
@@ -3352,6 +3384,14 @@
       }
     }
   },
+  "upcomingReleasesReportMore": "+{count} mehr",
+  "@upcomingReleasesReportMore": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "upcomingReleasesBadgeNew": "NEU",
   "upcomingReleasesOpenLibrarySeries": "Serie in Bibliothek öffnen",
   "upcomingReleasesAsinCopied": "Serien ASIN kopiert",
@@ -3369,9 +3409,18 @@
   "upcomingReleasesRestore": "Wiederherstellen",
   "upcomingReleasesRestoredToast": "Wiederhergestellt",
   "upcomingReleasesRestoredNextScan": "Wiederhergestellt - wird nach dem nächsten Scan angezeigt",
+  "upcomingReleasesBulkRequest": "Anfragen",
   "upcomingReleasesBulkRemove": "Entfernen",
   "upcomingReleasesBulkRequestSkipped": "{count} Übersprungen",
   "@upcomingReleasesBulkRequestSkipped": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "upcomingReleasesBulkScanFound": "{count} mit neuen Büchern",
+  "@upcomingReleasesBulkScanFound": {
     "placeholders": {
       "count": {
         "type": "int"
@@ -4051,9 +4100,14 @@
   "androidAutoTabContinue": "Weiterhören",
   "androidAutoTabLibrary": "Bibliothek",
   "androidAutoTabDownloads": "Downloads",
+  "settingsSearchHint": "Einstellungen suchen...",
+  "sectionCar": "Android Auto",
+  "sectionCarIos": "CarPlay",
   "androidAutoCatBooks": "Bücher",
   "androidAutoCatSeries": "Serien",
   "androidAutoCatAuthors": "Autoren",
+  "androidAutoCatCollections": "Sammlungen",
+  "androidAutoCatPlaylists": "Playlisten",
   "showTipsAgain": "Tipps wieder anzeigen",
   "showTipsAgainSubtitle": "Bringe ausgeblendete Funktions-Tipps zurück",
   "tipsRestored": "Tipps wiederhergestellt",
@@ -4149,6 +4203,14 @@
   "chapterFromTracks": "Aus Titel",
   "chapterLookup": "Suchen",
   "chapterShowSeconds": "Sekunden anzeigen",
+  "chapterWindowMinutes": "{minutes} min",
+  "@chapterWindowMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
   "chapterShiftBySeconds": "Verschieben um (Sekunden)",
   "chapterShiftHint": "Verschiebt jedes entsperrte Kapitel. Verwende einen negativen Wert, um sie früher zu verschieben.",
   "chapterTitleHint": "Kapitelname",
@@ -4542,9 +4604,11 @@
   "readerSettings": "Reader-Einstellungen",
   "readerFontSize": "Schriftgröße",
   "readerLineSpacing": "Zeilenabstand",
+  "readerAlignLeft": "Links",
   "readerSideMargins": "Seitenrand",
   "readerTopBottom": "Oben & Unten",
   "readerPageLayout": "Seitenlayout",
+  "readerKeepAwake": "Bildschirm ein lassen",
   "readerLayoutAuto": "Automatisch",
   "readerLayoutSingle": "Eine Seite",
   "readerLayoutTwoPage": "Zwei Seiten",
@@ -4554,6 +4618,37 @@
   "readerVolumeNavOff": "Aus",
   "readerVolumeNavNormal": "Normal",
   "readerVolumeNavMirrored": "Gespiegelt",
+  "readerAutoScrollSleepMinutes": "{minutes} min",
+  "@readerAutoScrollSleepMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "readerAutoScrollSleepLeft": "{minutes} min übrig",
+  "@readerAutoScrollSleepLeft": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "readerDownloadStarted": "Download gestartet",
+  "seriesStatsFinished": "Beendet",
+  "seriesStatsListened": "Gehört",
+  "seriesStatsLeft": "Übrig",
+  "seriesFinishedOf": "{done} von {total}",
+  "@seriesFinishedOf": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "readerVolumeNavWhilePlaying": "Selbst während Audio abgespielt wird",
   "readerMoreFonts": "Weitere Schriftarten herunterladen",
   "readerFontRemove": "Download entfernen",
@@ -4591,9 +4686,12 @@
   "syncSettingsConnection": "Verbindung",
   "syncSettingsConnectionNotSet": "Nicht eingerichtet",
   "syncSettingsIncludeRmab": "ReadMeABook Einstellungen",
+  "syncSettingsUsername": "Benutzername",
+  "syncSettingsPassword": "Passwort",
   "syncSettingsTest": "Verbindung testen",
   "syncSettingsHoldToUpload": "Halten, um jetzt hochzuladen",
   "syncSettingsUploadNow": "Jetzt hochladen",
+  "syncSettingsDownloadNow": "Jetzt herunterladen",
   "syncSettingsOk": "Verbunden",
   "syncSettingsNoRemote": "Verbunden - noch nichts Synchronisiert",
   "syncSettingsAuthFailed": "Falscher Benutzername oder Passwort",
