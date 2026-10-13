@@ -22,6 +22,16 @@
   "off": "Aus",
   "disabled": "Deaktiviert",
   "later": "Später",
+  "whatsNewTitle": "Absorb wurde aktualisiert",
+  "whatsNewContent": "Du bist jetzt auf {version}.",
+  "@whatsNewContent": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "whatsNewButton": "Was gibt's neues",
   "gotIt": "Verstanden",
   "preview": "Vorschau",
   "or": "oder",
@@ -61,6 +71,7 @@
   "loginApiKey": "API-Schlüssel",
   "loginApiKeyDescription": "Verwende einen vom Admin generierten API-Schlüssel statt Benutzername/Passwort. Praktisch, wenn die Token-Erneuerung für dein Konto fehlschlägt.",
   "loginWaitingForSso": "Warte auf SSO...",
+  "loginRedirectUri": "Redirect URI: absorb://oauth",
   "loginOrSignInManually": "oder manuell anmelden",
   "loginUsername": "Benutzername",
   "loginUsernameRequired": "Bitte gib deinen Benutzernamen ein",
@@ -349,6 +360,7 @@
   "downloadsDownloading": "Wird heruntergeladen",
   "downloadsQueued": "In Warteschlange",
   "downloadsCompleted": "Abgeschlossen",
+  "downloadsEbooks": "E-Books",
   "downloadsWaiting": "Warten...",
   "downloadsCancel": "Abbrechen",
   "downloadsDelete": "Löschen",
@@ -456,6 +468,7 @@
   "bookmarksSortedByPosition": "Sortiert nach Position",
   "bookmarksSelect": "Auswählen",
   "bookmarksNoBookmarks": "Noch keine Lesezeichen",
+  "batchDownloadNothingNew": "Bereits heruntergeladen",
   "bookmarksDeleteCount": "{count} Lesezeichen löschen?",
   "@bookmarksDeleteCount": {
     "placeholders": {
@@ -1086,6 +1099,7 @@
   },
   "clearLogs": "Logs löschen",
   "logsCleared": "Logs gelöscht",
+  "clearLogsQuestion": "Logs löschen?",
   "sectionAdvanced": "Erweitert",
   "localServer": "Lokaler Server",
   "localServerInfoTitle": "Lokaler Server",
